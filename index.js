@@ -24,13 +24,13 @@ app.post('/', bodyParser.json(), (req, res) => {
     request(url, {}, (err, response, body) => {
         if (err) {
             console.error(err)
-            res.send(`Express: Error when loading URL: ${err}`)
+            res.status(400).json({error: `Express: Error when loading URL: ${err}`})
         } else {
             console.log('Fetch worked! Data:')
             let lines = body.toString().split('\n')
             lines = lines.length <= 3 ? lines.join('\n') : lines.slice(0, 3).join('\n') + '\n...'
             console.log(lines)
-            res.send({msg: 'Express: File read successfully!', fileContent: body})
+            res.status(200).json({msg: 'Express: File read successfully!', fileContent: body})
         }
     })
 })
