@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe87d44-db7f-41c1-8d85-744df05ecd75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +66,11 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.28606963" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.4018182" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.34885126" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.34885126" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.33030304" />
       <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.34885126" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.34885126" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="SciView" />
@@ -137,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766258336607</updated>
       <workItem from="1766258338399" duration="16974000" />
-      <workItem from="1768918971520" duration="30591000" />
+      <workItem from="1768918971520" duration="40531000" />
     </task>
     <servers />
   </component>
