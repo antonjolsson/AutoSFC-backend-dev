@@ -1,3 +1,9 @@
+// TODO:
+//  • install and switch to MongoDB? (cannot run gpg as root)
+//  • handle hash URLs
+//  • handle max number of URLs
+//  • Mail feedback or create repo issue
+//  • Login?
 
 const express = require('express')
 const bodyParser = require('body-parser')
