@@ -53,7 +53,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.501004" visible="true" weight="0.25590277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.501004" visible="true" weight="0.34131944" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" sideWeight="0.49798793" side_tool="true" weight="0.32118055" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -62,14 +62,14 @@
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="HfCacheToolWindow" />
       <window_info anchor="bottom" id="PythonProcessOutput" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.33030304" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.28606963" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.4018182" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.4018182" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.34885126" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.33030304" />
       <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.4018182" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.34885126" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="SciView" />
@@ -139,12 +139,23 @@
       <option name="presentableId" value="Default" />
       <updated>1766258336607</updated>
       <workItem from="1766258338399" duration="16974000" />
-      <workItem from="1768918971520" duration="22121000" />
+      <workItem from="1768918971520" duration="28639000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
