@@ -3,7 +3,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const { nanoid } = require('nanoid')
+
 const MAX_ALLOWED_URLS = 10e+9
+const UID_LENGTH = 8
 
 const app = express()
 const port = 48985
@@ -48,7 +50,7 @@ app.post('/', bodyParser.json(), (req, res) => {
                 uid = existingUrl.uid
                 console.info(`Found URL ${url} in db; UID: ${uid}`)
             } else {
-                uid = nanoid(8)
+                uid = nanoid(UID_LENGTH)
                 await db.update(({urls}) => urls.push({fullUrl: url, uid: uid}))
                 console.info(`URL ${url} not found in db; Uid generated and added to db: ${uid}`)
                 newUid = true
