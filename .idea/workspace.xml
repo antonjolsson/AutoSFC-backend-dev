@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbe87d44-db7f-41c1-8d85-744df05ecd75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="fbe87d44-db7f-41c1-8d85-744df05ecd75" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +57,7 @@
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="HfCacheToolWindow" />
       <window_info anchor="bottom" id="PythonProcessOutput" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.28606963" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.34885126" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.4018182" />
       <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.34885126" />
@@ -140,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766258336607</updated>
       <workItem from="1766258338399" duration="16974000" />
-      <workItem from="1768918971520" duration="40855000" />
+      <workItem from="1768918971520" duration="41519000" />
     </task>
     <servers />
   </component>
@@ -152,7 +146,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="84" />
+                  <entry key="Table.Default.Hash.ColumnIdWidth" value="61" />
+                  <entry key="Table.GitHub.CommitStatus.ColumnIdWidth" value="61" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
