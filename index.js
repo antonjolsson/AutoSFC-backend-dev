@@ -1,18 +1,12 @@
 // TODO:
-//  • Handle hash collisions
-//  • install and switch to MongoDB? (cannot run gpg as root)
-//  • handle hash URLs
-//  • handle max number of URLs
 //  • Mail feedback or create repo issue
-//  • Login?
 
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
-const { nanoid } = require('nanoid')
+const crypto = require('crypto')
 
-const MAX_ALLOWED_URLS = 10e+9
-const UID_LENGTH = 8
+const HASH_LENGTH = 8
 
 const app = express()
 const port = 48985
@@ -43,29 +37,13 @@ app.post('/', bodyParser.json(), (req, res) => {
             lines = lines.length <= 3 ? lines.join('\n') : lines.slice(0, 3).join('\n') + '\n...'
             console.info(lines)
 
-            // Retrieve or generate hash
-            let newUid = false
-            let uid = ''
-
-            const defaultData = {urls: []}
-            const {JSONFilePreset} = await import ('lowdb/node')
-            const db = await JSONFilePreset('db.json', defaultData)
-            const { urls } = db.data
-            // noinspection JSUnresolvedReference
-            const existingUrl = urls.find(u => u.fullUrl === url)
-            if (existingUrl) {
-                uid = existingUrl.uid
-                console.info(`Found URL ${url} in db; UID: ${uid}`)
-            } else {
-                uid = nanoid(UID_LENGTH)
-                await db.update(({urls}) => urls.push({fullUrl: url, uid: uid}))
-                console.info(`URL ${url} not found in db; Uid generated and added to db: ${uid}`)
-                newUid = true
-            }
+            // Generate hash
+            const hash = crypto.hash('md5', body.toString())
+            console.info(hash)
 
             res.status(200).json({
-                msg: `Express: File read successfully! ${newUid ? `New UID created: ${uid}`: `UID received: ${uid}`}.`,
-                fileContent: body, uid: uid, newUid: newUid
+                msg: `Express: File read successfully! File hash: ${hash}`,
+                fileContent: body, hash: hash
             })
         }
     })
