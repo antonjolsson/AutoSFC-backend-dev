@@ -28,7 +28,8 @@ app.post('/', bodyParser.json(), (req, res) => {
     console.info(`Request received from ${req.headers.origin}!`)
 
     request(url, {}, async (err, response, body) => {
-        if (err) {
+        if (err || response.statusCode >= 400) {
+            console.error(response.statusCode)
             console.error(err)
             res.status(400).json({error: `Express: Error when loading URL: ${err}`})
         } else {
@@ -42,7 +43,7 @@ app.post('/', bodyParser.json(), (req, res) => {
             console.info(hash)
 
             res.status(200).json({
-                msg: `Express: File read successfully! File hash: ${hash}`,
+                msg: `Remote file read successfully!`,
                 fileContent: body, hash: hash
             })
         }
