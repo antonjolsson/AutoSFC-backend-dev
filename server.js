@@ -14,18 +14,22 @@ const cors = require('cors')
 
 app.use(cors())
 
+const getDate = () => {
+    return new Date(Date.now()).toLocaleString("sv-en", {timeZone: 'Europe/Copenhagen'})
+};
+
 app.get('/', (req, res) => {
     res.send('Hello from AutoSFC server!')
-    console.info(`Request received! ${req}`)
+    console.info(`${getDate()}. Request received! ${req}`)
 })
 
 app.listen(port, '0.0.0.0', () => {
-    console.info(`AutoSFC server listening on port ${port}!`)
+    console.info(`${getDate()}. AutoSFC server listening on port ${port}!`)
 })
 
 app.post('/', bodyParser.json(), (req, res) => {
     const url = req.body.url
-    console.info(`Request received from ${req.headers.origin}!`)
+    console.info(`${getDate()}. Request received from ${req.headers.origin}!`)
 
     request(url, {}, async (err, response, body) => {
         if (err || response.statusCode >= 400) {

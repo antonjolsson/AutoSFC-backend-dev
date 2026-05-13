@@ -5,10 +5,10 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start index.js --watch"
+    "start": "pm2 start server.js --watch"
   },
   "dependencies": {
     "body-parser": "^2.2.2",
