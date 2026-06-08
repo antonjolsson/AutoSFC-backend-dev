@@ -8,7 +8,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm install pm2 -g",
     "start": "pm2 start server.js --watch",
+    "stop": "pm2 stop server",
     "logs": "pm2 logs"
   },
   "dependencies": {
